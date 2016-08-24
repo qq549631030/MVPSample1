@@ -90,5 +90,4 @@ public class LoginActivity extends AppCompatActivity implements ILoginView, View
     public void showResult(String result) {
         Toast.makeText(LoginActivity.this, result, Toast.LENGTH_SHORT).show();
     }
-
 }

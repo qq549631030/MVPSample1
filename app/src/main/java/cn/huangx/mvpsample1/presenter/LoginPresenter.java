@@ -1,7 +1,7 @@
 package cn.huangx.mvpsample1.presenter;
 
 import cn.huangx.mvpsample1.model.Callback;
-import cn.huangx.mvpsample1.model.UserModel;
+import cn.huangx.mvpsample1.model.IUserModel;
 import cn.huangx.mvpsample1.view.ILoginView;
 
 /**
@@ -10,9 +10,9 @@ import cn.huangx.mvpsample1.view.ILoginView;
 public class LoginPresenter implements ILoginPresenter {
 
     private ILoginView loginView;
-    private UserModel userModel;
+    private IUserModel userModel;
 
-    public LoginPresenter(ILoginView loginView, UserModel userModel) {
+    public LoginPresenter(ILoginView loginView, IUserModel userModel) {
         this.loginView = loginView;
         this.userModel = userModel;
     }
